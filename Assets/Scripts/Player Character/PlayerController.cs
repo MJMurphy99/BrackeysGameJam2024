@@ -58,4 +58,10 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(0, 0);
         }
     }
+
+    void OnTriggerEnter2d(Collision2D col){
+        if(col.gameObject.CompareTag("EnemyEyesight")){
+            Debug.Log("Spotted by the enemy - Do something about it...");    
+        }
+    }
 }

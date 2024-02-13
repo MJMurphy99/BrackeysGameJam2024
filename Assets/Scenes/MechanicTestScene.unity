@@ -155,9 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 208189e2a5902a44eaa1ac9de66573a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  conditionalCount: 0
   playerTransform: {fileID: 714176670}
-  count: 0
 --- !u!212 &469123095
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -307,8 +305,9 @@ GameObject:
   m_Component:
   - component: {fileID: 714176670}
   - component: {fileID: 714176669}
-  - component: {fileID: 714176668}
   - component: {fileID: 714176671}
+  - component: {fileID: 714176672}
+  - component: {fileID: 714176668}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -441,6 +440,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!50 &714176672
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714176667}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1420950037
 GameObject:
   m_ObjectHideFlags: 0

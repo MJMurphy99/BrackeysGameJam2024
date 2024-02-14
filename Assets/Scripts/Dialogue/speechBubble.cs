@@ -14,12 +14,7 @@ public class SpeechBubble : MonoBehaviour
 
     private Coroutine textWriterCoroutine;
 
-    private void Awake()
-    {
-        Setup("Hello World! My name is the scientist and I have come for your pickle!!! My pickle is juicy and tender?????? and you know what else I dont like ");
-    }
-
-    private void Setup(string text)
+    public void Setup(string text)
     {
         backgroundSR = transform.Find("Speech Bubble").GetComponent<SpriteRenderer>();
         textMeshPro = transform.Find("Text").GetComponent<TextMeshPro>();

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5248b63b89cb44cfb91d1053ac98871c
+guid: 05fbf623c7cf9409ea598a9307427b26
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,10 +45,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,64 +123,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpeechBubble_0
+      name: BrackeysJam2024-PizzaBoy-WalkBack_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
+        width: 32
         height: 32
-      alignment: 9
-      pivot: {x: 0, y: 0.5}
-      border: {x: 2, y: 2, z: 2, w: 2}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a1975e307b60436bbb2a6481dee42b8
-      internalID: -597414840
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SpeechBubble_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f59289224bc3441c9821d92cfa6aa87
-      internalID: 753845589
+      spriteID: 893053aacf9d54ec2bba91a1f97b63c9
+      internalID: 2013142417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpeechBubble_2
+      name: BrackeysJam2024-PizzaBoy-WalkBack_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 825f8c2f9b148475992a0e209ce8cb58
-      internalID: -510169763
+      spriteID: 7ffef3f958690455fad904695235bece
+      internalID: 1291859296
       vertices: []
       indices: 
       edges: []
@@ -196,9 +175,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SpeechBubble_0: -597414840
-      SpeechBubble_1: 753845589
-      SpeechBubble_2: -510169763
+      BrackeysJam2024-PizzaBoy-WalkBack_0: 2013142417
+      BrackeysJam2024-PizzaBoy-WalkBack_1: 1291859296
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

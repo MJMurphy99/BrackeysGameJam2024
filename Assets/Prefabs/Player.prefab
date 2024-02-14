@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2636271779886640911}
   - component: {fileID: 7302462959642456560}
   - component: {fileID: 3253897225066055476}
+  - component: {fileID: 369947455945705558}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -146,3 +147,30 @@ MonoBehaviour:
   speed: 3
   currentSpeed: 0
   stopMovement: 0
+--- !u!50 &369947455945705558
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6082064193182565655}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

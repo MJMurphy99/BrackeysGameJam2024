@@ -14,8 +14,16 @@ public class SpeechBubble : MonoBehaviour
 
     private Coroutine textWriterCoroutine;
 
+    public GameObject speechBubbleGO;
+    public GameObject textGO;
+    public GameObject endDialogueCursorGO;
+
     public void Setup(string text)
     {
+        speechBubbleGO.SetActive(true);
+        textGO.SetActive(true);
+        endDialogueCursorGO.SetActive(false);
+
         backgroundSR = transform.Find("Speech Bubble").GetComponent<SpriteRenderer>();
         textMeshPro = transform.Find("Text").GetComponent<TextMeshPro>();
 
@@ -37,20 +45,39 @@ public class SpeechBubble : MonoBehaviour
 
         int totalVisibleCharacters = textInfo.characterCount;
         int counter = 0;
-        while (counter < totalVisibleCharacters)
+        float totalHeight = 0f; // Initialize total height
+        float totalWidth = 0f; // Initialize total width
+        if (totalVisibleCharacters == 0)
+        {
+            // If there's no text, set total height to padding
+            totalHeight = padding * 2;
+        }
+        while (counter <= totalVisibleCharacters)
         {
             int visibleCount = counter % (totalVisibleCharacters + 1);
             textMeshPro.maxVisibleCharacters = visibleCount;
 
             // Calculate total height of wrapped text
-            float totalHeight = textMeshPro.textBounds.size.y;
+            totalHeight = textMeshPro.textBounds.size.y;
+
+            // Calculate total width of wrapped text
+            totalWidth = textMeshPro.textBounds.size.x;
 
             // Adjust background size based on text size and padding
-            Vector2 backgroundSize = new Vector2(maxWidth + padding * 2, Mathf.Min(totalHeight + padding * 2, maxHeight));
+            Vector2 backgroundSize = new Vector2(
+                Mathf.Max(totalWidth + padding * 2, 0),
+                Mathf.Max(totalHeight + padding * 2, 0)
+            );
             backgroundSR.size = backgroundSize;
 
             counter++;
             yield return new WaitForSeconds(letterDelay);
+        }
+
+        // Text fully typed, activate endDialogueCursorGO
+        if (endDialogueCursorGO != null)
+        {
+            endDialogueCursorGO.SetActive(true);
         }
     }
 

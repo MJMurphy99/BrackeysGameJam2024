@@ -260,7 +260,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 714176670}
-  context: 0
 --- !u!212 &469123095
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -470,9 +469,9 @@ GameObject:
   m_Component:
   - component: {fileID: 714176670}
   - component: {fileID: 714176669}
-  - component: {fileID: 714176668}
   - component: {fileID: 714176671}
   - component: {fileID: 714176672}
+  - component: {fileID: 714176668}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -619,7 +618,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0

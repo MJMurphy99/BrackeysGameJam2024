@@ -1,21 +1,20 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NPCInteraction : Interactable
 {
     public Transform playerTransform;
+    public int context;
+    private TextManager tm;
 
     private void Start()
     {
         Player = playerTransform;
-    }
-
-    public override void OnTriggerStay2D(Collider2D other)
-    {
-        base.OnTriggerStay2D(other);
+        tm = GetComponent<TextManager>();
     }
 
     public override void ActionFunction()
     {
-        print("Hello World");
+        tm.Talk(context);
     }
 }

@@ -13,6 +13,11 @@ public class NPCInteraction : Interactable
         tm = GetComponent<TextManager>();
     }
 
+    private void Update()
+    {
+        InRange();
+    }
+
     public override void ActionFunction()
     {
         tm.Talk(context);

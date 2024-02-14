@@ -4,6 +4,8 @@ using UnityEngine;
 
 public abstract class Interactable : MonoBehaviour
 {
+
+    public float minDistance;
     protected Transform Player
     {
         get
@@ -19,9 +21,9 @@ public abstract class Interactable : MonoBehaviour
 
     private Transform player;
 
-    public virtual void OnTriggerStay2D(Collider2D other)
+    public void InRange()
     {
-        if (other.transform == player)
+        if (Vector2.Distance(transform.position, player.position) <= minDistance)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {

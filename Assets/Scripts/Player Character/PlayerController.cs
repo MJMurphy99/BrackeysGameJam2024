@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
 
+    public bool verticalSynapseEnabled, horizontalSynapseEnabled;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,30 +32,34 @@ public class PlayerController : MonoBehaviour
     private void Walk()
     {
         //Casey's Way
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
-        {
+        if(verticalSynapseEnabled){
+            if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
+            {
             rb.velocity = new Vector2(0, currentSpeed);
             anim.SetInteger("isWalking", 1);
+            }
+            if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+            {
+                //Down
+                rb.velocity = new Vector2(0, -currentSpeed);
+                anim.SetInteger("isWalking", 3);
+            }
         }
-        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
-        {
-            //Down
-            rb.velocity = new Vector2(0, -currentSpeed);
-            anim.SetInteger("isWalking", 3);
-        }
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
-        {
-            //Left
-            rb.velocity = new Vector2(-currentSpeed, 0);
-            transform.localScale = new Vector3(-1, 1, 1); //flip the sprite
-            anim.SetInteger("isWalking", 2);
-        }
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
-        {
-            //Right
-            rb.velocity = new Vector2(currentSpeed, 0);
-            transform.localScale = new Vector3(1, 1, 1); //flip the sprite
-            anim.SetInteger("isWalking", 2);
+        if(horizontalSynapseEnabled){
+            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+            {
+                //Left
+                rb.velocity = new Vector2(-currentSpeed, 0);
+                transform.localScale = new Vector3(-1, 1, 1); //flip the sprite
+                anim.SetInteger("isWalking", 2);
+            }
+            if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+            {
+                //Right
+                rb.velocity = new Vector2(currentSpeed, 0);
+                transform.localScale = new Vector3(1, 1, 1); //flip the sprite
+                anim.SetInteger("isWalking", 2);
+            }
         }
 
         if (!Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))

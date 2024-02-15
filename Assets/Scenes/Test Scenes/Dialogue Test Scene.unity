@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.6321532}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 7.159912, y: -107.81}
+  m_AnchoredPosition: {x: 7.159912, y: -107.80999}
   m_SizeDelta: {x: -61.1, y: 68.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &121213077
@@ -977,37 +977,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1690813530 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6082064193182565655, guid: b01f3255fdb29314f9d9bc03dc64d64b, type: 3}
-  m_PrefabInstance: {fileID: 5440665537126738224}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1690813534 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1514737131559434588, guid: b01f3255fdb29314f9d9bc03dc64d64b, type: 3}
   m_PrefabInstance: {fileID: 5440665537126738224}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1690813536
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1690813530}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4bb76e64b833448c5af61630c50fccae, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1765411639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,10 +1339,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 369947455945705558, guid: b01f3255fdb29314f9d9bc03dc64d64b, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 1514737131559434588, guid: b01f3255fdb29314f9d9bc03dc64d64b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1409,41 +1379,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2636271779886640911, guid: b01f3255fdb29314f9d9bc03dc64d64b, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: dcde6f21053c443ecac7b46d6aaa4b80, type: 3}
-    - target: {fileID: 2636271779886640911, guid: b01f3255fdb29314f9d9bc03dc64d64b, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2636271779886640911, guid: b01f3255fdb29314f9d9bc03dc64d64b, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2636271779886640911, guid: b01f3255fdb29314f9d9bc03dc64d64b, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6082064193182565655, guid: b01f3255fdb29314f9d9bc03dc64d64b, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 7302462959642456560, guid: b01f3255fdb29314f9d9bc03dc64d64b, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7302462959642456560, guid: b01f3255fdb29314f9d9bc03dc64d64b, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6082064193182565655, guid: b01f3255fdb29314f9d9bc03dc64d64b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1690813536}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b01f3255fdb29314f9d9bc03dc64d64b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

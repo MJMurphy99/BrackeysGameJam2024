@@ -4,7 +4,6 @@ using UnityEngine;
 
 public abstract class Interactable : MonoBehaviour
 {
-
     public float minDistance;
     protected Transform Player
     {
@@ -25,7 +24,7 @@ public abstract class Interactable : MonoBehaviour
     {
         if (Vector2.Distance(transform.position, player.position) <= minDistance)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 ActionFunction();
             }

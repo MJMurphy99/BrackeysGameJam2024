@@ -8,6 +8,7 @@ TagManager:
   - EnemyEyesight
   - HorizontalSynapse
   - VerticalSynapse
+  - player
   layers:
   - Default
   - TransparentFX

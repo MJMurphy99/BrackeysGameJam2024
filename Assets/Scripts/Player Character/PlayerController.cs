@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public bool verticalSynapseEnabled, horizontalSynapseEnabled;
 
     public bool inCutscene = false;
+    public GameObject interactIcon;
 
     // Start is called before the first frame update
     void Start()
@@ -95,5 +96,14 @@ public class PlayerController : MonoBehaviour
     public void EnableMovement()
     {
         inCutscene = false;
+    }
+
+    public void EnableInteractIcon()
+    {
+        interactIcon.SetActive(true);
+    }
+    public void DisableInteractIcon()
+    {
+        interactIcon.SetActive(false);
     }
 }

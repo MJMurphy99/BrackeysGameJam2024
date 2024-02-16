@@ -50,6 +50,8 @@ public class TextManager : SpeechBubble
 
     public void Talk(int context)
     {
+
+        pc.DisableMovement();
         Setup(interactions.Context(context)[index]);
         index = index == interactions.Context(context).Length - 1 ? index = 0 : index + 1;
         pc.currentSpeed = index == 0 ? pc.speed : pc.stopMovement;

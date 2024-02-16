@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
 
     public bool verticalSynapseEnabled, horizontalSynapseEnabled;
 
+    public bool inCutscene = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,9 +26,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Walk();
-
-        PizzaTime();
+        if (!inCutscene)
+        {
+            Walk();
+            PizzaTime();
+        }
+        
     }
 
     private void Walk()
@@ -80,5 +85,15 @@ public class PlayerController : MonoBehaviour
         {
             anim.SetBool("Pizza Time", false);
         }
+    }
+
+    public void DisableMovement()
+    {
+        inCutscene = true;
+    }
+
+    public void EnableMovement()
+    {
+        inCutscene = false;
     }
 }

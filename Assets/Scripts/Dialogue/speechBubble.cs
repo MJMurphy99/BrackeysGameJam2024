@@ -18,11 +18,15 @@ public class SpeechBubble : MonoBehaviour
     public GameObject textGO;
     public GameObject endDialogueCursorGO;
 
+    public PlayerController playerController;
+
     public void Setup(string text)
     {
         speechBubbleGO.SetActive(true);
         textGO.SetActive(true);
         endDialogueCursorGO.SetActive(false);
+
+        playerController.DisableMovement();
 
         backgroundSR = transform.Find("Speech Bubble").GetComponent<SpriteRenderer>();
         textMeshPro = transform.Find("Text").GetComponent<TextMeshPro>();

@@ -22,6 +22,7 @@ public class SpeechBubble : MonoBehaviour
 
     public void Setup(string text)
     {
+        playerController.DisableInteractIcon();
         speechBubbleGO.SetActive(true);
         textGO.SetActive(true);
         endDialogueCursorGO.SetActive(false);

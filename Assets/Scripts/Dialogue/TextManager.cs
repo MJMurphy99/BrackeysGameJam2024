@@ -7,7 +7,6 @@ using Newtonsoft.Json;
 //Newtonsoft.Json is a 3rd party Json reader. It's being used here because it is able to serialize and deserialize multidimensional arrays,
 //which are used for dialogue storage. More can be learned about Newtonsoft at https://www.newtonsoft.com/json/help/html/serializingjson.htm
 
-
 [System.Serializable]
 public class ContextDialogue
 {
@@ -40,6 +39,8 @@ public class TextManager : SpeechBubble
     private string fileText;
     private ContextDialogue interactions;
 
+    public static bool inDialogue = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,12 +49,28 @@ public class TextManager : SpeechBubble
         interactions = JsonConvert.DeserializeObject<ContextDialogue>(fileText);
     }
 
+    //public void StartDialogue()
+    //{
+    //    inDialogue = true;
+    //}
+
     public void Talk(int context)
     {
+        if (inDialogue)
+        {
+            pc.DisableMovement();
+            Setup(interactions.Context(context)[index]);
+            //index = index == interactions.Context(context).Length - 1 ? index = 0 : index + 1;
+            pc.currentSpeed = index == 0 ? pc.speed : pc.stopMovement;
 
-        pc.DisableMovement();
-        Setup(interactions.Context(context)[index]);
-        index = index == interactions.Context(context).Length - 1 ? index = 0 : index + 1;
-        pc.currentSpeed = index == 0 ? pc.speed : pc.stopMovement;
+            if (index <= interactions.Context(context).Length - 1)
+            {
+                index++;
+            }
+            else
+            {
+                inDialogue = false;
+            }
+        }
     }
 }

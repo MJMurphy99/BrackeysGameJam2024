@@ -1403,6 +1403,8 @@ PlayableDirector:
     value: {fileID: 1388574253}
   - key: {fileID: -9216472180463334533, guid: fdb6ae949cc9a448b91f8b2401b5d6b2, type: 2}
     value: {fileID: 275129705}
+  - key: {fileID: 2650133748217070240, guid: fdb6ae949cc9a448b91f8b2401b5d6b2, type: 2}
+    value: {fileID: 2055266891}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1388574251
@@ -2399,6 +2401,7 @@ GameObject:
   - component: {fileID: 2055266888}
   - component: {fileID: 2055266887}
   - component: {fileID: 2055266886}
+  - component: {fileID: 2055266891}
   m_Layer: 0
   m_Name: box (1)
   m_TagString: Untagged
@@ -2558,6 +2561,36 @@ Transform:
   - {fileID: 1228082337}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2055266891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055266885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: ccf9e09385444418abdac0e97c0f029f, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2055266887}
+          m_TargetAssemblyTypeName: TextManager, Assembly-CSharp
+          m_MethodName: Talk
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &5440665537126738224
 PrefabInstance:
   m_ObjectHideFlags: 0

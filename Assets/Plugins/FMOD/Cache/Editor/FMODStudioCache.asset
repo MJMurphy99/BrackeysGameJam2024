@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Casey's Audio Corner/Brackeys Jam 2024/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638432452434666035
+  lastModified: 638436417981479365
   FileSizes:
   - Name: Desktop
     Value: 2168416
@@ -35,7 +35,7 @@ MonoBehaviour:
   Path: Casey's Audio Corner/Brackeys Jam 2024/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638432452434676018
+  lastModified: 638436417981496437
   FileSizes:
   - Name: Desktop
     Value: 764
@@ -62,7 +62,7 @@ MonoBehaviour:
   - {fileID: -2414640625474323210}
   StringsBanks:
   - {fileID: -998598185667160688}
-  cacheTime: 638432452434676018
+  cacheTime: 638436417981496437
   cacheVersion: 131616
 --- !u!114 &7436542984200563134
 MonoBehaviour:

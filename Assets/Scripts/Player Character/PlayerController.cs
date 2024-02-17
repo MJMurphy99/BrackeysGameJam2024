@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
     public bool verticalSynapseEnabled, horizontalSynapseEnabled;
 
-    public bool inCutscene = false;
+    public static bool inCutscene = false;
     public GameObject interactIcon;
 
     // Start is called before the first frame update
@@ -91,6 +91,7 @@ public class PlayerController : MonoBehaviour
     public void DisableMovement()
     {
         inCutscene = true;
+        anim.SetInteger("isWalking", 0);
     }
 
     public void EnableMovement()

@@ -1,0 +1,1086 @@
+fileFormatVersion: 2
+guid: 905b3ef8e81be9c4f98b6650fdc20737
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 168
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16fcf6b115d5114094219c301d9cb2a
+      internalID: -1107906370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 161
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6101b19f2d8ecb14bb076fa0b7da8e1e
+      internalID: 388620608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 143
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8fedcaea4af9c643ae60837928ef19c
+      internalID: 2073197962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_3
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 148
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e52d57e5b4c5a4c8f9efd249529613
+      internalID: -1357442264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_4
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 165
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fdb381f71017f54d9baf1f78ea4f58b
+      internalID: 1809024347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_5
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 164
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a91b69ad2a5a67419ceb0dc91f17469
+      internalID: -911869119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_6
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 147
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d11b6a97906add498f451f063d74e20
+      internalID: 457227063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_7
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 148
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3c5d525033b2546aec79140e78327a
+      internalID: 1114961711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_8
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 168
+        width: 70
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df0cbcd47501e148a910cbe28698a71
+      internalID: 2025275284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_9
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 123
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58cb92aa81b78e489d6d2f18c586bdb
+      internalID: -1473914319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_10
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 125
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f152b4d76e3d7db43806083382b6c28a
+      internalID: -1389950238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_11
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 150
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451fd5bf38ac20e4d9d25e853a0e33c5
+      internalID: -647982611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_12
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 150
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1da0ea1c79b5f489165a30be3a3ddb
+      internalID: 1171334721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_13
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 114
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d1eb8e3782f804c87ea5913304f9ed
+      internalID: 436622192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_14
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 114
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26b9bb7f9c977446b2e7005b42ed9b4
+      internalID: -1240766228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_15
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 122
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894d455750b528f40a8899a7c440b5aa
+      internalID: -282677335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_16
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 122
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90547916c6b6cf4c99cdb6e4cc13d73
+      internalID: -379726271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_17
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 127
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db615bc7ab4d954db25107ed04144bd
+      internalID: -24327141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_18
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 112
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72075678fd3121489c637ff738bd03d
+      internalID: -349674203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_19
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 134
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8f048da336efb4db9dcfecb2560d94
+      internalID: 2011214262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_20
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 134
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3bbf6159851e9c4fbddd65f9f716a5f
+      internalID: 1544791545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_21
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 109
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e76684902a78394c8d22548cb85a8cd
+      internalID: 1594889268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_22
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 125
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4047937af54caea42bbd488fe90509a5
+      internalID: -1152163673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_23
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 125
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c250a7548c787ef4b978156b2ff574ab
+      internalID: 1064426881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_24
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 130
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be379b67f8b1e146919dbdd4650ec2d
+      internalID: 1401928488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_25
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 65
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a640d2aadd221ff4da69653e5d17f9b1
+      internalID: 316514515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_26
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 65
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ab919803548cc46a574940e6d19b58
+      internalID: -591426173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_27
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 75
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24c316076f7aff49b6a0077447e816d
+      internalID: -847656656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_28
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 72
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb0fe5a2d5607c4696ec1ec42ad7030
+      internalID: 697102390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_29
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 81
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f0ead5bc882cc46a18c085da4b1612
+      internalID: -152951417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_30
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 67
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8724bd8ee35c6d4cb9a323bc71dfd3e
+      internalID: 811976968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_31
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 67
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe1adeb78cfb2c4194dea56e16f6427
+      internalID: -1491544770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_32
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 51
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f8b73eaea516849a14e908d7b057ae
+      internalID: 224987164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_33
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 51
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6409aa7444486a54fb9a0c4847bb2333
+      internalID: 128408365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_34
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 49
+        width: 44
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98dc7cc0d13a00428ed95dd1d7c2782
+      internalID: -331633433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_35
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 45
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6054ed7531517f54987769b08e3ceb04
+      internalID: -51439848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_36
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 28
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c261274fe67a41468709316bde5836a
+      internalID: 1970463248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_37
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 21
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafed5f764445c348b99665cb3e8a4a7
+      internalID: 2024155326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_38
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 5
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208dd6e184327674fb90259bf8a7d822
+      internalID: -1312802914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_39
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 19
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51bc0631acdf0254288e131e16cdf3f8
+      internalID: -426419688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_40
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 19
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b9c069d7b0a9847ba3f18f51df484c
+      internalID: 2012164275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_41
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 19
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9aa9e9d4a9615429cf961b732b71f4
+      internalID: -847527104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scientist_House_Tiles_n_Props-2_42
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 7
+        width: 64
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f573fd15af81e4487034e12db5d7f7
+      internalID: -657766728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Scientist_House_Tiles_n_Props-2_0: -1107906370
+      Scientist_House_Tiles_n_Props-2_1: 388620608
+      Scientist_House_Tiles_n_Props-2_10: -1389950238
+      Scientist_House_Tiles_n_Props-2_11: -647982611
+      Scientist_House_Tiles_n_Props-2_12: 1171334721
+      Scientist_House_Tiles_n_Props-2_13: 436622192
+      Scientist_House_Tiles_n_Props-2_14: -1240766228
+      Scientist_House_Tiles_n_Props-2_15: -282677335
+      Scientist_House_Tiles_n_Props-2_16: -379726271
+      Scientist_House_Tiles_n_Props-2_17: -24327141
+      Scientist_House_Tiles_n_Props-2_18: -349674203
+      Scientist_House_Tiles_n_Props-2_19: 2011214262
+      Scientist_House_Tiles_n_Props-2_2: 2073197962
+      Scientist_House_Tiles_n_Props-2_20: 1544791545
+      Scientist_House_Tiles_n_Props-2_21: 1594889268
+      Scientist_House_Tiles_n_Props-2_22: -1152163673
+      Scientist_House_Tiles_n_Props-2_23: 1064426881
+      Scientist_House_Tiles_n_Props-2_24: 1401928488
+      Scientist_House_Tiles_n_Props-2_25: 316514515
+      Scientist_House_Tiles_n_Props-2_26: -591426173
+      Scientist_House_Tiles_n_Props-2_27: -847656656
+      Scientist_House_Tiles_n_Props-2_28: 697102390
+      Scientist_House_Tiles_n_Props-2_29: -152951417
+      Scientist_House_Tiles_n_Props-2_3: -1357442264
+      Scientist_House_Tiles_n_Props-2_30: 811976968
+      Scientist_House_Tiles_n_Props-2_31: -1491544770
+      Scientist_House_Tiles_n_Props-2_32: 224987164
+      Scientist_House_Tiles_n_Props-2_33: 128408365
+      Scientist_House_Tiles_n_Props-2_34: -331633433
+      Scientist_House_Tiles_n_Props-2_35: -51439848
+      Scientist_House_Tiles_n_Props-2_36: 1970463248
+      Scientist_House_Tiles_n_Props-2_37: 2024155326
+      Scientist_House_Tiles_n_Props-2_38: -1312802914
+      Scientist_House_Tiles_n_Props-2_39: -426419688
+      Scientist_House_Tiles_n_Props-2_4: 1809024347
+      Scientist_House_Tiles_n_Props-2_40: 2012164275
+      Scientist_House_Tiles_n_Props-2_41: -847527104
+      Scientist_House_Tiles_n_Props-2_42: -657766728
+      Scientist_House_Tiles_n_Props-2_5: -911869119
+      Scientist_House_Tiles_n_Props-2_6: 457227063
+      Scientist_House_Tiles_n_Props-2_7: 1114961711
+      Scientist_House_Tiles_n_Props-2_8: 2025275284
+      Scientist_House_Tiles_n_Props-2_9: -1473914319
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

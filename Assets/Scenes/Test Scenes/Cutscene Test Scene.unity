@@ -1373,7 +1373,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!320 &1388574250
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -1566,6 +1566,7 @@ MonoBehaviour:
   textGO: {fileID: 1722553928}
   endDialogueCursorGO: {fileID: 505468747}
   playerController: {fileID: 5440665537126738225}
+  npc: {fileID: 1511387640}
   filePath: /Dialogue/MadDogText.json
 --- !u!114 &1511387640
 MonoBehaviour:
@@ -1580,6 +1581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minDistance: 2
+  dialogueDone: 1
   playerTransform: {fileID: 1690813534}
   context: 0
 --- !u!212 &1511387641
@@ -1764,6 +1766,7 @@ MonoBehaviour:
   textGO: {fileID: 1568374954}
   endDialogueCursorGO: {fileID: 1311523953}
   playerController: {fileID: 5440665537126738225}
+  npc: {fileID: 1548928353}
   filePath: /Dialogue/MadScientistText.json
 --- !u!61 &1548928350
 BoxCollider2D:
@@ -1823,6 +1826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minDistance: 2
+  dialogueDone: 1
   playerTransform: {fileID: 1690813534}
   context: 0
 --- !u!1 &1568374954
@@ -2474,6 +2478,7 @@ MonoBehaviour:
   textGO: {fileID: 940094076}
   endDialogueCursorGO: {fileID: 1159488401}
   playerController: {fileID: 5440665537126738225}
+  npc: {fileID: 2055266888}
   filePath: /Dialogue/MadDogText.json
 --- !u!114 &2055266888
 MonoBehaviour:
@@ -2488,6 +2493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minDistance: 2
+  dialogueDone: 1
   playerTransform: {fileID: 1690813534}
   context: 0
 --- !u!212 &2055266889

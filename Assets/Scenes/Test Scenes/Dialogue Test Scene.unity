@@ -784,6 +784,7 @@ MonoBehaviour:
   textGO: {fileID: 1568374954}
   endDialogueCursorGO: {fileID: 1311523953}
   playerController: {fileID: 1690813538}
+  npc: {fileID: 1548928353}
   filePath: /Dialogue/MadScientistText.json
 --- !u!61 &1548928350
 BoxCollider2D:
@@ -843,6 +844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minDistance: 5
+  dialogueDone: 1
   playerTransform: {fileID: 1690813534}
   context: 0
 --- !u!1 &1568374954

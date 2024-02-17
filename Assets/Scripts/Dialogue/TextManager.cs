@@ -49,28 +49,21 @@ public class TextManager : SpeechBubble
         interactions = JsonConvert.DeserializeObject<ContextDialogue>(fileText);
     }
 
-    //public void StartDialogue()
-    //{
-    //    inDialogue = true;
-    //}
-
     public void Talk(int context)
     {
-        if (inDialogue)
+        if(index <= interactions.Context(context).Length - 2)
         {
             pc.DisableMovement();
             Setup(interactions.Context(context)[index]);
-            //index = index == interactions.Context(context).Length - 1 ? index = 0 : index + 1;
-            pc.currentSpeed = index == 0 ? pc.speed : pc.stopMovement;
-
-            if (index <= interactions.Context(context).Length - 1)
-            {
-                index++;
-            }
-            else
-            {
-                inDialogue = false;
-            }
+            index++;
+            pc.DisableMovement();
+            //pc.currentSpeed = index == 0 ? pc.speed : pc.stopMovement;
+        }
+        else
+        {
+            DisableSpeechBubble();
+            pc.EnableMovement();
+            index = 0;
         }
     }
 }

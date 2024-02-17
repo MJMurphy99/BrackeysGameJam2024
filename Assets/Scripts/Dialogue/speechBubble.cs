@@ -20,12 +20,15 @@ public class SpeechBubble : MonoBehaviour
 
     public PlayerController playerController;
 
+    public NPCInteraction npc;
+
     public void Setup(string text)
     {
         playerController.DisableInteractIcon();
         speechBubbleGO.SetActive(true);
         textGO.SetActive(true);
         endDialogueCursorGO.SetActive(false);
+        npc.dialogueDone = false;
 
         backgroundSR = transform.Find("Speech Bubble").GetComponent<SpriteRenderer>();
         textMeshPro = transform.Find("Text").GetComponent<TextMeshPro>();
@@ -81,6 +84,7 @@ public class SpeechBubble : MonoBehaviour
         if (endDialogueCursorGO != null)
         {
             endDialogueCursorGO.SetActive(true);
+            npc.dialogueDone = true;
         }
     }
 
@@ -104,5 +108,12 @@ public class SpeechBubble : MonoBehaviour
             newLines.Add(currentLine);
 
         return string.Join("\n", newLines);
+    }
+
+    public void DisableSpeechBubble()
+    {
+        speechBubbleGO.SetActive(false);
+        textGO.SetActive(false);
+        endDialogueCursorGO.SetActive(false);
     }
 }

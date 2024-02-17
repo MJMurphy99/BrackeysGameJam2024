@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class Interactable : MonoBehaviour
 {
     public float minDistance;
+    public bool dialogueDone = true;
     protected Transform Player
     {
         get
@@ -24,7 +25,7 @@ public abstract class Interactable : MonoBehaviour
     {
         if (Vector2.Distance(transform.position, player.position) <= minDistance)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (dialogueDone && Input.GetKeyDown(KeyCode.E))
             {
                 ActionFunction();
             }

@@ -6,6 +6,9 @@ public abstract class Interactable : MonoBehaviour
 {
     public float minDistance;
     public bool dialogueDone = true;
+    public TextManager tm;
+
+
     protected Transform Player
     {
         get
@@ -23,7 +26,7 @@ public abstract class Interactable : MonoBehaviour
 
     public void InRange()
     {
-        if (Vector2.Distance(transform.position, player.position) <= minDistance)
+        if (Vector2.Distance(transform.position, player.position) <= minDistance || tm.activeNPC == true)
         {
             if (dialogueDone && Input.GetKeyDown(KeyCode.E))
             {

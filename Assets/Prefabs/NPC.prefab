@@ -456,7 +456,7 @@ GameObject:
   - component: {fileID: 3382050294677285661}
   - component: {fileID: 7846665419682831181}
   m_Layer: 0
-  m_Name: box
+  m_Name: NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

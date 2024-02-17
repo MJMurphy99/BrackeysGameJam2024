@@ -40,6 +40,7 @@ public class TextManager : SpeechBubble
     private ContextDialogue interactions;
 
     public static bool inDialogue = true;
+    public bool activeNPC = false;
 
     // Start is called before the first frame update
     void Start()
@@ -64,6 +65,12 @@ public class TextManager : SpeechBubble
             DisableSpeechBubble();
             pc.EnableMovement();
             index = 0;
+            activeNPC = false;
         }
+    }
+
+    public void ActiveDialogue()
+    {
+        activeNPC = true;
     }
 }

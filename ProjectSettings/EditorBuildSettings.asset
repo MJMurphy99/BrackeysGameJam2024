@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Gameplay Scenes/Devil's Home Scene 2.unity
     guid: 936a1e877079442438cd3cfc80904ad5
   - enabled: 1
-    path: Assets/Scenes/Gameplay Scenes/Game Show Scene 3.unity
-    guid: 8600fd5e8de241449b86ee02cb70701e
-  - enabled: 1
     path: Assets/Scenes/Gameplay Scenes/Meadow Scene 5.unity
     guid: 096aad73ce0207d4ba91d04dce3b946e
   m_configObjects: {}

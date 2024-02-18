@@ -1,5 +1,59 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8674937684050676311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Devil_Shower
+  m_EditorClassIdentifier: 
+  Path: event:/Devil_Shower
+  Guid:
+    Data1: 665396135
+    Data2: 1264169564
+    Data3: 1226794123
+    Data4: -753101333
+  Banks:
+  - {fileID: -2414640625474323210}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 19500
+--- !u!114 &-6669731610702683627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Devil_Popout
+  m_EditorClassIdentifier: 
+  Path: event:/Devil_Popout
+  Guid:
+    Data1: 1292753009
+    Data2: 1279438869
+    Data3: 800012953
+    Data4: -182913713
+  Banks:
+  - {fileID: -2414640625474323210}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12000
 --- !u!114 &-2414640625474323210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,11 +69,38 @@ MonoBehaviour:
   Path: Casey's Audio Corner/Brackeys Jam 2024/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638432452434666035
+  lastModified: 638437927666599672
   FileSizes:
   - Name: Desktop
-    Value: 2168416
+    Value: 3237728
   Exists: 1
+--- !u!114 &-1582588939982046061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue_TextType
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue_TextType
+  Guid:
+    Data1: -1193302290
+    Data2: 1131164862
+    Data3: -1967821690
+    Data4: -1502387142
+  Banks:
+  - {fileID: -2414640625474323210}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8500
 --- !u!114 &-998598185667160688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,10 +116,10 @@ MonoBehaviour:
   Path: Casey's Audio Corner/Brackeys Jam 2024/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638432452434676018
+  lastModified: 638437927666639594
   FileSizes:
   - Name: Desktop
-    Value: 764
+    Value: 1076
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -57,13 +138,100 @@ MonoBehaviour:
   - {fileID: -2414640625474323210}
   EditorEvents:
   - {fileID: 7436542984200563134}
+  - {fileID: 7215136284871476428}
+  - {fileID: 1355120209194442868}
+  - {fileID: -6669731610702683627}
+  - {fileID: -8674937684050676311}
+  - {fileID: 2926712380342099407}
+  - {fileID: -1582588939982046061}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2414640625474323210}
   StringsBanks:
   - {fileID: -998598185667160688}
-  cacheTime: 638432452434676018
+  cacheTime: 638437927666639594
   cacheVersion: 131616
+--- !u!114 &1355120209194442868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music_Scientist
+  m_EditorClassIdentifier: 
+  Path: event:/Music_Scientist
+  Guid:
+    Data1: -749919436
+    Data2: 1231653798
+    Data3: 2054697141
+    Data4: 462787685
+  Banks:
+  - {fileID: -2414640625474323210}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 56470
+--- !u!114 &2926712380342099407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue_AdvanceText
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue_AdvanceText
+  Guid:
+    Data1: 1522535365
+    Data2: 1192485808
+    Data3: 1829360294
+    Data4: 728269215
+  Banks:
+  - {fileID: -2414640625474323210}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1906
+--- !u!114 &7215136284871476428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Gameplay_EnterDoor
+  m_EditorClassIdentifier: 
+  Path: event:/Gameplay_EnterDoor
+  Guid:
+    Data1: 2010278439
+    Data2: 1076569150
+    Data3: -2137274981
+    Data4: 509113506
+  Banks:
+  - {fileID: -2414640625474323210}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12000
 --- !u!114 &7436542984200563134
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -81,6 +81,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             anim.SetBool("Pizza Time", true);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Gameplay_PizzaTime");
         }
         else if (Input.GetKeyUp(KeyCode.Space))
         {

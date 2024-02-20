@@ -31,6 +31,7 @@ public abstract class Interactable : MonoBehaviour
             if (dialogueDone && Input.GetKeyDown(KeyCode.E))
             {
                 ActionFunction();
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Dialogue_AdvanceText");
             }
         }
     }

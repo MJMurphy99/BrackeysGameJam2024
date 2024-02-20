@@ -60,6 +60,7 @@ public class SpeechBubble : MonoBehaviour
         }
         while (counter <= totalVisibleCharacters)
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Dialogue_TextType");
             int visibleCount = counter % (totalVisibleCharacters + 1);
             textMeshPro.maxVisibleCharacters = visibleCount;
 

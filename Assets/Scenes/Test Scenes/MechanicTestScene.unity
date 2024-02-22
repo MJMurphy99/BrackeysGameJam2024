@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 469123097}
   - component: {fileID: 469123098}
   - component: {fileID: 469123099}
+  - component: {fileID: 469123101}
   - component: {fileID: 469123100}
   m_Layer: 0
   m_Name: MadScientist
@@ -259,7 +260,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 208189e2a5902a44eaa1ac9de66573a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 714176670}
 --- !u!212 &469123095
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -416,7 +416,13 @@ MonoBehaviour:
   maxHeight: 3
   padding: 0.5
   letterDelay: 0.1
+  speechBubbleGO: {fileID: 0}
+  textGO: {fileID: 0}
+  endDialogueCursorGO: {fileID: 0}
+  playerController: {fileID: 0}
+  npc: {fileID: 0}
   filePath: /Dialogue/MadScientistText.json
+  activeNPC: 0
 --- !u!61 &469123100
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -462,11 +468,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!4 &714176670 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6235663976735039134, guid: b01f3255fdb29314f9d9bc03dc64d64b, type: 3}
-  m_PrefabInstance: {fileID: 9166369071898066472}
+--- !u!114 &469123101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469123093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64410fc2516e5d943ae1341cca5e698d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1041560544
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,7 +887,13 @@ MonoBehaviour:
   maxHeight: 3
   padding: 0.5
   letterDelay: 0.1
+  speechBubbleGO: {fileID: 0}
+  textGO: {fileID: 0}
+  endDialogueCursorGO: {fileID: 0}
+  playerController: {fileID: 0}
+  npc: {fileID: 0}
   filePath: /Dialogue/MadDogText.json
+  activeNPC: 0
 --- !u!50 &1957411506
 Rigidbody2D:
   serializedVersion: 4
@@ -959,8 +978,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 208189e2a5902a44eaa1ac9de66573a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 714176670}
-  context: 0
 --- !u!212 &1957411509
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -33,6 +33,8 @@ public class TextManager : SpeechBubble
 {
     //public TextMeshProUGUI txt;
     public string filePath;
+    public string[] functionNames;
+    public GameObject[] functionObjects;
     private PlayerController pc;
 
     private int index = 0;
@@ -46,13 +48,13 @@ public class TextManager : SpeechBubble
     void Start()
     {
         pc = FindObjectOfType<PlayerController>();
-        fileText = File.ReadAllText(Application.dataPath + filePath);
+        fileText = File.ReadAllText(Application.streamingAssetsPath + filePath);
         interactions = JsonConvert.DeserializeObject<ContextDialogue>(fileText);
     }
 
     public void Talk(int context)
     {
-        if(index <= interactions.Context(context).Length - 2)
+        if (index <= interactions.Context(context).Length - 2)
         {
             pc.DisableMovement();
             Setup(interactions.Context(context)[index]);
@@ -66,6 +68,7 @@ public class TextManager : SpeechBubble
             pc.EnableMovement();
             index = 0;
             activeNPC = false;
+            gameObject.SendMessage(functionNames[0]);
         }
     }
 

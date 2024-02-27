@@ -8,9 +8,9 @@ using Newtonsoft.Json;
 //which are used for dialogue storage. More can be learned about Newtonsoft at https://www.newtonsoft.com/json/help/html/serializingjson.htm
 
 [System.Serializable]
-public class ContextDialogue
+public class StateData
 {
-    private string[][] interactions;
+    private string[][] interactions, functions;
     public string[][] Interactions
     {
         get
@@ -23,9 +23,21 @@ public class ContextDialogue
         }
     }
 
-    public string[] Context(int index)
+    public string[][] Functions
     {
-        return interactions[index];
+        get
+        {
+            return functions;
+        }
+        set
+        {
+            functions = value;
+        }
+    }
+
+    public string[] State(int index, bool isInteraction)
+    {
+        return isInteraction ? interactions[index] : functions[index];
     }
 }
 
@@ -35,11 +47,12 @@ public class TextManager : SpeechBubble
     public string filePath;
     public string[] functionNames;
     public GameObject[] functionObjects;
+    public string[] data;
     private PlayerController pc;
 
     private int index = 0;
     private string fileText;
-    private ContextDialogue interactions;
+    private StateData dialogueData;
 
     public static bool inDialogue = true;
     public bool activeNPC = false;
@@ -49,18 +62,20 @@ public class TextManager : SpeechBubble
     {
         pc = FindObjectOfType<PlayerController>();
         fileText = File.ReadAllText(Application.streamingAssetsPath + filePath);
-        interactions = JsonConvert.DeserializeObject<ContextDialogue>(fileText);
+        dialogueData = JsonConvert.DeserializeObject<StateData>(fileText);
     }
 
     public void Talk(int context)
     {
-        if (index <= interactions.Context(context).Length - 2)
+        if (index <= dialogueData.State(context, true).Length - 2)
         {
             pc.DisableMovement();
-            Setup(interactions.Context(context)[index]);
+            Setup(dialogueData.State(context, true)[index]);
+            string funcLine = dialogueData.State(context, false)[index];
+            if (funcLine.CompareTo("") != 0)
+                ActionDictionary.TalkCallback(funcLine);
             index++;
             pc.DisableMovement();
-            //pc.currentSpeed = index == 0 ? pc.speed : pc.stopMovement;
         }
         else
         {
@@ -68,7 +83,6 @@ public class TextManager : SpeechBubble
             pc.EnableMovement();
             index = 0;
             activeNPC = false;
-            gameObject.SendMessage(functionNames[0]);
         }
     }
 

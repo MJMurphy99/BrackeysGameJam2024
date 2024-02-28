@@ -18,13 +18,8 @@
             "But I want that pizza, so let's find out how to get you out!"
         ]
     ],
-    "Functions":[
-        [
-            "",
-            "",
-            "",
-            "1|false|5|true",
-            ""
-        ]
+    "Functions":
+    [
+        "1|Test Text|2|true"
     ]
 }

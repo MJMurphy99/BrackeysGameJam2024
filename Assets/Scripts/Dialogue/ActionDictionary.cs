@@ -13,6 +13,7 @@ public static class ActionDictionary
 
     private static List<object> ParseParameterFromText(string text)
     {
+
         List<object> parameters = new();
         string[] parametersAsString = text.Split("|");
         foreach (string p in parametersAsString)
@@ -24,6 +25,11 @@ public static class ActionDictionary
             else if (char.IsLetter(p[0]))
             {
                 parameters.Add(p);
+            }
+            else if (p[0].CompareTo('@') == 0)
+            {
+                GameObject g = GameObject.FindGameObjectWithTag(p.Substring(1, p.Length - 1));
+                parameters.Add(g);
             }
             else
             {
@@ -49,7 +55,7 @@ public static class ActionDictionary
                         After writing the parameter from the array, write as (data type you want) - ex) 'parameters[1] as string'
                         If the parameter is an 'int' or 'bool', write it as 'int?' or 'bool?'  
                     */
-                    SampleFunction(parameters[1] as string, parameters[2] as int?, parameters[3] as bool?);
+                    SampleFunction(parameters[1] as GameObject);
                     break;
                 }
             default:
@@ -60,7 +66,7 @@ public static class ActionDictionary
         }
     }
 
-    private static void SampleFunction(string s1, int? i1, bool? b1)
+    private static void SampleFunction(GameObject g)
     {
         /*
             This is an example of how 'Action' functions will look in the Action Dictionary
@@ -69,6 +75,11 @@ public static class ActionDictionary
             If you need a Vector2, combine to 'int?' parameters - eg) private static void FunctionName(int? x int? y){}
             If you need a parameter data type that isn't an 'int', 'bool', 'string', let us know - If pass 'int' as a substitute to 'float'
         */
-        Debug.Log(s1 + " " + i1 + " " + b1);
+
+
+        Debug.Log(g.name);
     }
+
+
+
 }

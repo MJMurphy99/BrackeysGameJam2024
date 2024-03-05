@@ -1419,6 +1419,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scientist
       objectReference: {fileID: 0}
+    - target: {fileID: 7751568868267481449, guid: cd021eee16d33497b86c93b93b3f4635, type: 3}
+      propertyPath: m_TagString
+      value: Scientist
+      objectReference: {fileID: 0}
     - target: {fileID: 7846665419682831181, guid: cd021eee16d33497b86c93b93b3f4635, type: 3}
       propertyPath: m_Size.x
       value: 0.7224363

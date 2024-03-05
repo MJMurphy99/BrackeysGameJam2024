@@ -20,6 +20,8 @@
     ],
     "Functions":
     [
-        "1|Test Text|2|true"
+        [
+            "1|@Scientist"
+        ]
     ]
 }

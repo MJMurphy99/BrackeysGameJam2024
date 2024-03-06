@@ -28,7 +28,7 @@ public static class ActionDictionary
             }
             else if (p[0].CompareTo('@') == 0)
             {
-                GameObject g = GameObject.FindGameObjectWithTag(p.Substring(1, p.Length - 1));
+                GameObject g = GameObject.Find(p.Substring(1, p.Length - 1));
                 parameters.Add(g);
             }
             else
@@ -77,7 +77,7 @@ public static class ActionDictionary
         */
 
 
-        Debug.Log(g.name);
+        Debug.Log(g.transform.position);
     }
 
 

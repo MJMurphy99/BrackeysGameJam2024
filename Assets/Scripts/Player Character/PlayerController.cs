@@ -32,17 +32,18 @@ public class PlayerController : MonoBehaviour
             Walk();
             PizzaTime();
         }
-        
+
     }
 
     private void Walk()
     {
         //Casey's Way
-        if(verticalSynapseEnabled){
+        if (verticalSynapseEnabled)
+        {
             if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
             {
-            rb.velocity = new Vector2(0, currentSpeed);
-            anim.SetInteger("isWalking", 1);
+                rb.velocity = new Vector2(0, currentSpeed);
+                anim.SetInteger("isWalking", 1);
             }
             if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
             {
@@ -51,7 +52,8 @@ public class PlayerController : MonoBehaviour
                 anim.SetInteger("isWalking", 3);
             }
         }
-        if(horizontalSynapseEnabled){
+        if (horizontalSynapseEnabled)
+        {
             if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
                 //Left
@@ -89,15 +91,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    public void DisableMovement()
+    public void DisableMovement(int dir)
     {
         inCutscene = true;
-        anim.SetInteger("isWalking", 0);
+        anim.SetInteger("isWalking", dir);
     }
 
-    public void EnableMovement()
+    public void EnableMovement(int dir)
     {
         inCutscene = false;
+        anim.SetInteger("isWalking", dir);
     }
 
     public void EnableInteractIcon()

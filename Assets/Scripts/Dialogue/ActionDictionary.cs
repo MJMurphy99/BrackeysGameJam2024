@@ -47,15 +47,15 @@ public static class ActionDictionary
 
         switch (actionIndex)
         {
+            /*
+                In the parameters of the function, pass each parameter from the parameters[]
+                After writing the parameter from the array, write as (data type you want) - ex) 'parameters[1] as string'
+                If the parameter is an 'int' or 'bool', write it as 'int?' or 'bool?'  
+            */
             case 1:
                 {
-                    /*
-                        Example Case for calling a function in the Action Dictionary
-                        In the parameters of the function, pass each parameter from the parameters[]
-                        After writing the parameter from the array, write as (data type you want) - ex) 'parameters[1] as string'
-                        If the parameter is an 'int' or 'bool', write it as 'int?' or 'bool?'  
-                    */
-                    SampleFunction(parameters[1] as GameObject);
+
+                    ToggleObjectActivation(parameters[1] as GameObject, parameters[2] as bool?);
                     break;
                 }
             default:
@@ -73,13 +73,21 @@ public static class ActionDictionary
             They will all be labeled as 'private static void' - If you need a value returned, let us know
             If your function will have parameters, 'int' and 'bool' need to include ? - ex) 'int?' or 'bool?'
             If you need a Vector2, combine to 'int?' parameters - eg) private static void FunctionName(int? x int? y){}
-            If you need a parameter data type that isn't an 'int', 'bool', 'string', let us know - If pass 'int' as a substitute to 'float'
         */
 
 
         Debug.Log(g.transform.position);
     }
 
+    private static void ToggleObjectActivation(GameObject g, bool? isActive)
+    {
+        g.SetActive((bool)isActive);
+    }
+
+    private static void RotateObject(GameObject g, int? x, int? y, int? z)
+    {
+        g.transform.Rotate(new Vector3((int)x, (int)y, (int)z));
+    }
 
 
 }

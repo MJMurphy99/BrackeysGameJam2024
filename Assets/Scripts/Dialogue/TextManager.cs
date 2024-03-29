@@ -77,19 +77,19 @@ public class TextManager : SpeechBubble
     {
         if (index <= dialogueData.State(context, true).Length - 2)
         {
-            pc.DisableMovement();
+            pc.DisableMovement(0);
             Setup(dialogueData.State(context, true)[index]);
             string funcLine = dialogueData.State(context, false) == null || dialogueData.State(context, false).Length - 1 < index ?
                 "" : dialogueData.State(context, false)[index];
             if (funcLine.CompareTo("") != 0)
                 ActionDictionary.TalkCallback(funcLine);
             index++;
-            pc.DisableMovement();
+            pc.DisableMovement(0);
         }
         else
         {
             DisableSpeechBubble();
-            pc.EnableMovement();
+            pc.EnableMovement(0);
             index = 0;
             activeNPC = false;
         }

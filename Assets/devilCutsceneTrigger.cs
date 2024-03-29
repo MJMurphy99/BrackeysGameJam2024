@@ -30,7 +30,7 @@ public class devilCutsceneTrigger : MonoBehaviour
         {
             FMODUnity.RuntimeManager.PlayOneShot("event:/DevilPopout");
             audioManager.SetActive(false);
-            //camera.SetActive(true);
+            camera.SetActive(true);
 
             TimelinePlayer.BuildDirector(GetComponent<PlayableDirector>());
             TimelinePlayer.StartTimeline();
